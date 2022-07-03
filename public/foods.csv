@@ -1,0 +1,139 @@
+Id,Name,Description,"Date Create","Date Update",Image,Price,"Discount Price","Restaurant ID","Category ID"
+1,"Burger King","A delicate bread made with a yeasted starter known as poolish. Available in classic baguette or loaf. *Available daily.","2020-09-09 17:49:23","2021-01-30 11:09:13",http://localhost/restaurants/public/images/1604890425675penyet.jpg,12.50,0.00,2,3
+2,Chick-Fil-A,"A delicate bread made with a yeasted starter known as poolish. Available in classic baguette or loaf. *Available daily.","2020-09-09 17:50:15","2020-11-23 20:58:33",http://localhost/restaurants/public/images/1604648667120Compotas.jpg,14.34,0.00,2,1
+3,Chili’s,"A delicate bread made with a yeasted starter known as poolish. Available in classic baguette or loaf. *Available daily.","2020-09-09 17:52:04","2020-11-23 20:58:58",http://localhost/restaurants/public/images/1603721362095s1.jpeg,34.23,0.00,2,1
+4,"Buffalo Wild Wings","A delicate bread made with a yeasted starter known as poolish. Available in classic baguette or loaf. *Available daily.","2020-09-09 17:53:57","2020-11-23 20:58:48",http://localhost/restaurants/public/images/1599677576605pr1.jpg,12.43,0.00,2,3
+6,"Chili’s Barrel","A delicate bread made with a yeasted starter known as poolish. Available in classic baguette or loaf. *Available daily.","2020-09-09 17:56:16","2020-11-23 20:22:56",http://localhost/restaurants/public/images/1599677764532shop2.jpg,56.34,0.00,2,2
+7,French,"A delicate bread made with a yeasted starter known as poolish. Available in classic baguette or loaf. *Available daily.","2020-09-22 06:28:49","2020-09-22 06:28:49",http://localhost/restaurants/public/images/1600759727139bread1.jpg,4.00,0.00,2,5
+8,"French Baguette","Natural fermentation gives a tangy and distinctive flavor. Considering it's nutritional benefits, this is the kind of bread that defies negativity. *","2020-09-22 06:30:20","2020-09-22 06:30:20",http://localhost/restaurants/public/images/1600759801394bread2.jpg,4.00,0.00,2,5
+9,"Maine Grains Wheat","A hearty flavor with a light crumb and crunchy exterior. These natural flavors are courtesy of New England's own.","2020-09-22 06:31:38","2020-09-22 06:31:38",http://localhost/restaurants/public/images/1600759887300bread3.jpg,5.00,0.00,5,5
+10,"Family style pizza","serves 4-5, available daily after 11:30am!","2020-09-22 06:32:59","2020-11-23 20:54:35",http://localhost/restaurants/public/images/1600759961871bread4.jpg,13.00,0.00,4,5
+11,"Layered Vegetable Pie","(vegetarian): Seasoned Beyond Meat plant-based crumbles, beans, guacamole, diced tomatoes, lettuce, cheddar cheese, red sauce, and sour cream.","2020-09-25 10:25:26","2021-01-02 16:08:39",http://localhost/restaurants/public/images/1601032910913000000425960400-IE.jpg,8.00,5.99,3,24
+12,"Layered Vegetable Pie","(vegetarian): Seasoned Beyond Meat plant-based crumbles, beans, guacamole, diced tomatoes, lettuce, cheddar cheese, red sauce, and sour cream.","2020-09-25 10:28:49","2020-11-22 13:39:57",http://localhost/restaurants/public/images/16010333060581-Hero_Beyond-8-Layer-Burrito.png,4.00,0.00,3,24
+13,"AVOCADO VEGGIE BOWL","Hand-sliced avocado, seasoned black beans, diced onions, fresh diced tomatoes, and fresh romaine and iceberg lettuce blend, served over cilantro lime rice.","2020-09-25 10:33:57","2020-11-23 20:52:00",http://localhost/restaurants/public/images/1602272290801f2.jpg,7.00,0.00,2,2
+14,"EPIC BEYOND ORIGINAL MEX BURRITO","(vegan): Loaded with Beyond meat®, slow-cooked beans made from scratch, cilantro lime rice, fresh guacamole, and handmade pico de gallo, all in a warm, oversized flour tortilla.","2020-09-25 10:35:02","2020-11-22 13:40:11",http://localhost/restaurants/public/images/16010336516051-Hero_Epic-Beyond-Cali-Burrito.png,8.00,0.00,3,24
+15,"Smoked Chicken Wings","Hand Cut Tortilla Chips- With brisket, bacon, and pork. Topped with cheddar cheese, tomatoes, onions, jalapenos & fresh avocado. Then drizzled with sour cream and Jazzy Q (Our sweet and tangy BBQ)","2020-09-25 10:53:30","2020-11-23 20:23:19",http://localhost/restaurants/public/images/1601034750952meat1.jpg,8.95,0.00,4,3
+35,"Nasi Kunyit Ayam Goreng with Sambal Hitam","Traditionally served as a celebratory meal, Nasi Kunyit is cooked with fragrant yellow turmeric, which is a symbol for good fortune, wealth, and royalty. Perfectly paired with turmeric fried chicken and spicy 'black' sauce to make this meal a winner in our books!","2020-10-09 18:35:52","2020-10-09 18:36:55",http://localhost/restaurants/public/images/1602272131683f1.jpg,14.99,0.00,4,3
+36,"Thai Green Chicken Curry","The moment you open up your bowl of goodness, your senses will be hit with fresh herbs aroma such as kaffir lime leaves, Thai basil and lemongrass. Our Thai Green Curry is so good you're going to regret not ordering extra!","2020-10-09 18:38:31","2020-10-09 18:38:58",http://localhost/restaurants/public/images/1602272290801f2.jpg,10.99,0.00,4,2
+37,"Crazy Spicy Mac & Cheese",,"2020-10-26 10:44:55","2020-11-23 20:55:42",http://localhost/restaurants/public/images/1603712680663f3.jpg,12.99,0.00,4,1
+41,"Iced Pandan Lemonade",,"2020-10-26 10:54:16","2020-10-26 10:54:16",http://localhost/restaurants/public/images/1603713199851w1.jpg,3.99,0.00,5,14
+42,"Iced Honey Green Tea",,"2020-10-26 10:56:02","2020-11-23 20:48:39",http://localhost/restaurants/public/images/1603713352698w2.jpg,3.99,0.00,5,14
+43,"Iced Coffee (Sweet)",,"2020-10-26 10:56:52","2020-10-26 10:56:52",http://localhost/restaurants/public/images/1603713409423w3.jpg,6.99,0.00,5,14
+44,"Iced Caramel Latte",,"2020-10-26 10:57:33","2020-11-23 21:00:03",http://localhost/restaurants/public/images/1603713450793w4.jpg,5.99,0.00,5,14
+45,"Iced Long Black (Sweet)",,"2020-10-26 12:38:02","2020-10-26 12:38:02",http://localhost/restaurants/public/images/1603719472235w5.jpg,4.99,0.00,2,14
+46,"Iced Americano",,"2020-10-26 12:38:59","2020-11-23 20:45:04",http://localhost/restaurants/public/images/1603719535692w6.jpg,7.99,0.00,3,14
+47,"Iced Latte",,"2020-10-26 12:41:34","2020-10-26 12:41:34",http://localhost/restaurants/public/images/1603719690969w7.jpg,4.99,0.00,2,14
+48,"Sirap Bandung with Sweet Jelly Boba (360 ml)",,"2020-10-26 12:42:37","2020-11-23 20:03:54",http://localhost/restaurants/public/images/1603719754057w8.jpg,4.59,0.00,5,14
+49,"Coca Cola",,"2020-10-26 12:44:11","2020-11-22 08:39:31",http://localhost/restaurants/public/images/1603719847202w9.jpg,2.99,0.00,3,14
+50,"Iced Caramel Macchiato - 100% Arabica",,"2020-10-26 12:45:00","2020-11-22 08:39:22",http://localhost/restaurants/public/images/1603719897486w10.jpg,3.99,0.00,3,14
+51,"Iced Latte - 100% Arabica",,"2020-10-26 12:45:50","2020-11-22 08:39:12",http://localhost/restaurants/public/images/1603719945023w11.jpg,3.99,0.00,3,14
+52,"Sirap Bandung with Sweet Jelly Boba (360 ml)",,"2020-10-26 12:55:29","2020-11-23 19:40:45",http://localhost/restaurants/public/images/1603720516867w12.jpeg,3.99,0.00,2,14
+53,"Teh O Limau Ais (500ml)",,"2020-10-26 12:57:57","2020-10-26 12:57:57",http://localhost/restaurants/public/images/1603720669502w13.jpeg,3.99,0.00,2,14
+54,"Barli Ais (500ml)",,"2020-10-26 12:58:53","2020-11-22 08:39:02",http://localhost/restaurants/public/images/1603720713438w14.jpeg,3.99,0.00,3,14
+55,"Sirap Ais (500ml)",,"2020-10-26 12:59:51","2020-11-06 18:00:28",http://localhost/restaurants/public/images/1603720784460w15.jpeg,3.99,0.00,2,14
+56,"Chrysanthemum (500ml)",,"2020-10-26 13:00:48","2020-11-23 19:39:17",http://localhost/restaurants/public/images/1603720843016w16.jpeg,3.99,0.00,2,14
+57,"Brown Sugar Milk Tea with Sweet Jelly Boba (360 ml)",,"2020-10-26 13:01:37","2020-10-26 13:01:37",http://localhost/restaurants/public/images/1603720891913w17.jpeg,3.99,0.00,2,14
+58,"Matcha with Sweet Jelly Boba (360 ml)",,"2020-10-26 13:02:29","2021-01-02 16:09:01",http://localhost/restaurants/public/images/1603720940841w18.jpeg,3.99,2.99,2,14
+59,"Honey Soy Sesame Chicken","The Honey Soy Chicken puts the A in Awesome! Sweet but salty, you will love how aromatic this dish really is!","2020-10-26 13:10:04","2020-11-23 20:31:24",http://localhost/restaurants/public/images/1603721362095s1.jpeg,11.99,0.00,3,15
+60,"BBQ Chicken Rice","Craving for BBQ but don’t have the time to set up the grill? Our Roast BBQ Chicken will hit the spot with its sticky-sweet and smokey flavour. This delicious classic is served with tangy chili dip and honey soy sauce. Give in to temptation!","2020-10-26 13:12:07","2020-12-01 11:20:42",http://localhost/restaurants/public/images/1603721522399q1.jpeg,11.99,0.00,2,15
+61,"وجبه بروستد",,"2020-11-06 19:52:11","2020-11-06 19:52:11",http://localhost/restaurants/public/images/16010336516051-Hero_Epic-Beyond-Cali-Burrito.png,2.00,0.00,15,2
+62,DDD,,"2020-11-06 22:51:41","2020-11-23 20:56:07",http://localhost/restaurants/public/images/1599677764532shop2.jpg,55.00,0.00,18,4
+63,"Nasi Lemak Ayam Berempah",,"2020-11-09 01:59:07","2021-01-02 12:51:32",http://localhost/restaurants/public/images/1604890632551nasilemak.jpg,10.00,6.99,16,16
+66,"MOM’S “MOSTLY CABBAGE, A LITTLE BIT OF PORK” DUMPLINGS (5 PCS)",,"2020-11-22 09:34:35","2020-11-22 09:34:35",http://localhost/restaurants/public/images/1606041232885image_2020-11-22_123352.png,7.99,0.00,3,2
+67,"BAMBOO SALAD",,"2020-11-22 09:36:23","2020-11-23 20:50:40",http://localhost/restaurants/public/images/1606041369280image_2020-11-22_123609.png,9.80,0.00,3,2
+68,"WING BEAN AND EDAMAME SALAD",,"2020-11-22 09:37:13","2020-11-22 09:37:13",http://localhost/restaurants/public/images/1606041423998image_2020-11-22_123703.png,7.60,0.00,3,2
+69,"PRAWN TOAST X OKONOMIYAKI (4PCS)",,"2020-11-22 09:38:04","2020-11-22 09:38:04",http://localhost/restaurants/public/images/1606041469925image_2020-11-22_123749.png,8.90,0.00,3,2
+70,"SMOKED EGGPLANT SALAD",,"2020-11-22 09:39:09","2020-11-22 09:39:09",http://localhost/restaurants/public/images/1606041530331image_2020-11-22_123850.png,8.90,0.00,3,2
+71,"CHONGQING-STYLE CHICKEN WINGS (7 PCS)",,"2020-11-22 09:40:32","2020-11-22 09:40:32",http://localhost/restaurants/public/images/1606041583002image_2020-11-22_123942.png,6.90,0.00,3,2
+72,"KAFFIR CHICKEN CABBAGE SALAD",,"2020-11-22 09:42:07","2020-11-22 09:42:07",http://localhost/restaurants/public/images/1606041666340image_2020-11-22_124106.png,5.90,0.00,2,2
+73,B1,,"2020-11-22 10:57:08","2020-11-22 11:01:34",http://localhost/restaurants/public/images/16060464850685.png,5.80,0.00,4,2
+74,dfzhdf,"Our newly refurbished and extended restaurant has been designed with a warm and contemporary feel, carefully designed to enable space yet intimacy.  Again like our lounge bar offering panoramic view of Stanley harbour.","2020-11-22 11:07:45","2020-11-23 19:49:17",http://localhost/restaurants/public/images/1606046834559ww.png,20.00,0.00,4,14
+75,"SEASONAL CHUTNEYS",,"2020-11-22 13:03:43","2020-11-23 19:41:14",http://localhost/restaurants/public/images/1606054191853image_2020-11-22_160951.png,3.33,0.00,4,2
+77,RAITA,,"2020-11-22 13:11:08","2020-11-22 13:11:08",http://localhost/restaurants/public/images/1606054251323image_2020-11-22_161051.png,4.55,0.00,4,2
+78,"HARA SALAAD",,"2020-11-22 13:12:12","2020-11-22 13:12:12",http://localhost/restaurants/public/images/1606054324024image_2020-11-22_161203.png,3.77,0.00,4,2
+79,"PYAZ AUR MIRCHI SALAAD",,"2020-11-22 13:14:35","2020-11-23 20:39:29",http://localhost/restaurants/public/images/1606054378314image_2020-11-22_161258.png,5.77,0.00,4,2
+80,"QUATTRO FORMAGGI",,"2020-11-22 13:19:56","2021-01-22 04:35:19",http://localhost/restaurants/public/images/1606054774738image_2020-11-22_161934.png,13.90,9.99,5,23
+81,"BRUSSELS SPROUT",,"2020-11-22 13:20:53","2020-11-22 13:20:53",http://localhost/restaurants/public/images/1606054839756image_2020-11-22_162039.png,12.99,0.00,5,23
+82,"CREMINI MUSHROOM",,"2020-11-22 13:21:57","2020-11-23 20:56:18",http://localhost/restaurants/public/images/1606054906069image_2020-11-22_162145.png,11.99,0.00,5,23
+83,MARGHERITA,,"2020-11-22 13:22:34","2020-11-23 20:49:15",http://localhost/restaurants/public/images/1606054931263image_2020-11-22_162211.png,11.99,0.00,5,23
+84,MEATBALL,,"2020-11-22 13:23:18","2020-11-22 13:23:18",http://localhost/restaurants/public/images/1606054983880image_2020-11-22_162303.png,11.99,0.00,5,23
+85,"PROSCIUTTO DI PARMA",,"2020-11-22 13:23:45","2020-11-23 20:36:24",http://localhost/restaurants/public/images/1606055008479image_2020-11-22_162328.png,11.99,0.00,5,23
+86,"SOPPRESSATA PICCANTE",,"2020-11-22 13:24:17","2020-11-23 19:52:39",http://localhost/restaurants/public/images/1606055034327image_2020-11-22_162354.png,10.99,0.00,5,23
+87,MARINARA,,"2020-11-22 13:24:49","2020-11-22 13:24:49",http://localhost/restaurants/public/images/1606055067697image_2020-11-22_162427.png,11.99,0.00,5,23
+88,PORCHETTA,,"2020-11-22 13:25:20","2020-11-22 13:25:20",http://localhost/restaurants/public/images/1606055098949image_2020-11-22_162458.png,12.99,0.00,5,23
+89,TIRAMISU,,"2020-11-22 13:42:29","2020-11-23 20:45:19",http://localhost/restaurants/public/images/1606056133660image_2020-11-22_164213.png,4.60,0.00,20,25
+90,"NUTELLA CALZONE",,"2020-11-22 13:43:05","2020-11-22 13:43:05",http://localhost/restaurants/public/images/1606056164361image_2020-11-22_164244.png,4.55,0.00,20,25
+91,"WOOD-FIRED BANANA BREAD",,"2020-11-22 13:44:40","2020-11-22 13:44:40",http://localhost/restaurants/public/images/1606056253455image_2020-11-22_164413.png,4.55,0.00,20,25
+92,"CHOCOLATE & ALMOND BROWNIE",,"2020-11-22 13:45:15","2020-11-23 20:50:18",http://localhost/restaurants/public/images/1606056288289image_2020-11-22_164448.png,4.66,0.00,20,25
+93,COKE,192ml,"2020-11-22 13:46:07","2020-11-22 13:46:07",http://localhost/restaurants/public/images/1606056342745image_2020-11-22_164542.png,1.99,0.00,20,14
+94,ARANCIATA,200ml,"2020-11-22 13:46:41","2020-11-22 13:46:41",http://localhost/restaurants/public/images/1606056379230image_2020-11-22_164619.png,1.99,0.00,20,14
+95,"EAST IMPERIAL GINGER BEER",150ml,"2020-11-22 13:47:12","2020-11-22 13:47:12",http://localhost/restaurants/public/images/1606056408685image_2020-11-22_164648.png,1.99,0.00,20,14
+96,"CREAM SODA",207ml,"2020-11-22 13:47:49","2020-11-22 13:47:49",http://localhost/restaurants/public/images/1606056445243image_2020-11-22_164725.png,1.99,0.00,20,14
+97,LIMONATA,200ml,"2020-11-22 13:48:31","2020-11-22 13:48:31",http://localhost/restaurants/public/images/1606056493106image_2020-11-22_164812.png,1.99,0.00,20,14
+98,"EAST IMPERIAL GINGER ALE",150ml,"2020-11-22 13:53:21","2020-11-23 21:00:23",http://localhost/restaurants/public/images/1606056777615image_2020-11-22_165257.png,1.99,0.00,20,14
+99,"STILL WATER",1L,"2020-11-22 13:54:00","2020-11-22 13:54:00",http://localhost/restaurants/public/images/1606056810651image_2020-11-22_165330.png,0.99,0.00,20,14
+100,"COKE ZERO",192ml,"2020-11-22 13:54:32","2020-11-23 20:38:41",http://localhost/restaurants/public/images/1606056852348image_2020-11-22_165412.png,1.99,0.00,20,14
+101,MORETTI,"Euro Pale Lager • 330ml","2020-11-22 13:55:16","2020-11-22 13:55:16",http://localhost/restaurants/public/images/1606056883880image_2020-11-22_165443.png,1.99,0.00,20,14
+102,"SPARKLING WATER",1L,"2020-11-22 13:55:48","2020-11-22 13:55:48",http://localhost/restaurants/public/images/1606056927851image_2020-11-22_165527.png,1.99,0.00,20,14
+103,"PILSNER URQUELL","Pale Lager • 330ml","2020-11-22 13:56:19","2020-11-23 19:51:15",http://localhost/restaurants/public/images/1606056960912image_2020-11-22_165600.png,2.99,0.00,20,14
+104,"ICHNUSA NON FILTRATA","Sardinian Lager • 330ml","2020-11-22 13:56:50","2020-11-22 13:56:50",http://localhost/restaurants/public/images/1606056988322image_2020-11-22_165628.png,2.99,0.00,20,14
+105,"CHORIZO SAUSAGE","Pork Sausage, Chimichurri","2020-11-22 14:01:50","2020-11-22 14:01:50",http://localhost/restaurants/public/images/1606057278934image_2020-11-22_170118.png,7.99,0.00,20,3
+106,EMPANADAS,"1 PC","2020-11-22 14:02:49","2020-11-22 14:02:49",http://localhost/restaurants/public/images/1606057350111image_2020-11-22_170229.png,9.88,0.00,20,3
+107,"WOOD-SMOKED BACON","Bacon, Chimichurri","2020-11-22 14:03:16","2021-01-02 16:07:19",http://localhost/restaurants/public/images/1606057378066image_2020-11-22_170257.png,8.99,5.99,20,3
+108,"PLATTER OF IBERIAN COLD CUTS","Salami Milano, Jamón Iberico, Sopressata","2020-11-22 14:04:00","2021-01-02 16:09:24",http://localhost/restaurants/public/images/1606057410949image_2020-11-22_170330.png,12.12,10.12,20,3
+109,BURRATA,"Burrata, Garlic Chives, Heirloom Tomato, Gaucho Bread","2020-11-22 14:04:31","2020-11-22 14:04:31",http://localhost/restaurants/public/images/1606057450617image_2020-11-22_170410.png,12.99,0.00,20,3
+110,"20OZ BONE-IN SIRLOIN","General Pico • 100% Grass-fed Black Angus Beef Steaks • Please note that steak does tend to keep cooking a little during travel time but we will do our best to have it arrive with you at your preferred doneness","2020-11-22 14:06:05","2020-11-22 14:06:05",http://localhost/restaurants/public/images/1606057528192image_2020-11-22_170527.png,23.99,0.00,20,3
+111,"10OZ TENDERLOIN","Pure Black Angus Beef Steak • Please note that steak does tend to keep cooking a little during travel time but we will do our best to have it arrive with you at your preferred doneness","2020-11-22 14:06:43","2020-11-22 14:06:43",http://localhost/restaurants/public/images/1606057576199image_2020-11-22_170615.png,23.99,0.00,20,3
+112,"14OZ SIRLOIN","General Pico Brand Argentine Pure Black Angus Beef Steak • Please note that steak does tend to keep cooking a little during travel time but we will do our best to have it arrive with you at your preferred doneness","2020-11-22 14:07:36","2020-11-22 14:07:36",http://localhost/restaurants/public/images/1606057621205image_2020-11-22_170700.png,30.99,0.00,20,3
+113,"HALF CHICKEN","Chicken, Chimichurri Rub","2020-11-22 14:08:07","2020-11-22 14:08:07",http://localhost/restaurants/public/images/1606057665242image_2020-11-22_170744.png,13.99,0.00,20,3
+114,"MAITAKE MUSHROOMS","Maitake Mushrooms, Garlic, Parsley","2020-11-22 14:10:41","2020-11-22 14:10:41",http://localhost/restaurants/public/images/1606057821648image_2020-11-22_171021.png,8.99,0.00,20,26
+115,"CREAMED SPINACH","Spinach, Garlic Bechamel, Grana Padano","2020-11-22 14:11:10","2020-11-22 14:11:10",http://localhost/restaurants/public/images/1606057850822image_2020-11-22_171050.png,8.99,0.00,20,26
+116,"FRIES PROVENZAL","Potato Fries, Duck Fat, Garlic, Parsley","2020-11-22 14:13:12","2021-01-02 16:07:53",http://localhost/restaurants/public/images/1606057974737image_2020-11-22_171254.png,5.55,3.55,20,26
+117,"MASHED POTATO","Potato, Mascarpone, Brown Butter","2020-11-22 14:13:47","2020-11-22 14:13:47",http://localhost/restaurants/public/images/1606058002085image_2020-11-22_171321.png,5.66,0.00,20,26
+118,"HENRI GIRAUD, BAPC ENGRAVED FUT DE CHENE, CHAMPAGNE 2010","Champagne • Grape variety: Pinot Noir, Pinot Meunier, Chardonnay • Region: Champagne, France","2020-11-22 14:15:34","2021-01-02 16:08:17",http://localhost/restaurants/public/images/1606058098966image_2020-11-22_171458.png,35.88,16.88,20,27
+119,"FRANCESCO RINALDI, BAROLO BRUNATE, PIEDMONT, ITALY 2012","Red wine • Grape variety: Nebbiolo • Region: Piedmont, Italy","2020-11-22 14:16:12","2020-11-22 14:16:12",http://localhost/restaurants/public/images/1606058149979image_2020-11-22_171549.png,56.99,0.00,20,27
+120,"MONTEPULCIANO D'ABRUZZO FARNESE LARINUM, FARNESE 2017, ABRUZZO","Bottle • 100% Montepulciano • Black Cherries • Medium • Smooth","2020-11-22 14:18:40","2020-11-22 14:18:40",http://localhost/restaurants/public/images/1606058297011image_2020-11-22_171816.png,45.99,0.00,20,27
+121,BRESAOLA,"Served with grapes and toasted bread","2020-11-22 14:40:13","2020-11-23 20:37:56",http://localhost/restaurants/public/images/1606059586700image_2020-11-22_173946.png,9.99,0.00,3,3
+122,COPPA,"Served with grapes and toasted bread","2020-11-22 14:40:44","2020-11-22 14:40:44",http://localhost/restaurants/public/images/1606059625097image_2020-11-22_174024.png,9.99,0.00,3,3
+123,SOPPRESSATA,"Served with grapes and toasted bread","2020-11-22 14:41:17","2020-11-22 14:41:17",http://localhost/restaurants/public/images/1606059654596image_2020-11-22_174054.png,9.99,0.00,3,3
+124,"FORMAGGI - ASSORTED FOR THREE","Gorgonzola, Parmesan, Taleggio, Asiago","2020-11-22 14:41:50","2020-11-22 14:41:50",http://localhost/restaurants/public/images/1606059690149image_2020-11-22_174129.png,9.99,0.00,3,3
+125,"FORMAGGI E SALUMI MISTI","Served with grapes and toasted bread","2020-11-22 14:42:31","2020-11-24 11:15:57",http://localhost/restaurants/public/images/1606059722731image_2020-11-22_174202.png,9.99,0.00,3,3
+126,"PROSCIUTTO DI PARMA","Served with grapes and toasted bread","2020-11-22 14:43:02","2020-11-22 14:57:46",http://localhost/restaurants/public/images/1606059760027image_2020-11-22_174239.png,9.99,0.00,3,3
+127,"SALUMI - ASSORTED FOR THREE","Prosciutto di Parma, Soppressata, Coppa, Bresaola","2020-11-22 14:43:44","2020-11-22 14:43:44",http://localhost/restaurants/public/images/1606059801747image_2020-11-22_174321.png,9.99,0.00,3,3
+128,AMERICANO,"Please select your size","2020-11-22 14:46:01","2020-11-22 14:46:01",http://localhost/restaurants/public/images/1606059939473image_2020-11-22_174539.png,2.99,0.00,4,14
+129,"ICED AMERICANO",,"2020-11-22 14:46:32","2020-11-22 14:46:32",http://localhost/restaurants/public/images/1606059971307image_2020-11-22_174611.png,1.99,0.00,4,14
+130,ESPRESSO,,"2020-11-22 14:47:15","2020-11-22 14:47:15",http://localhost/restaurants/public/images/1606060019761image_2020-11-22_174659.png,2.99,0.00,4,14
+131,"DOUBLE ESPRESSO",,"2020-11-22 14:47:40","2020-11-22 14:47:40",http://localhost/restaurants/public/images/1606060045704image_2020-11-22_174725.png,2.99,0.00,4,14
+132,"FLAT WHITE",,"2020-11-22 14:48:24","2020-11-22 14:48:24",http://localhost/restaurants/public/images/1606060070656image_2020-11-22_174750.png,2.99,0.00,4,14
+133,CAPPUCCINO,,"2020-11-22 14:48:53","2020-11-23 19:54:27",http://localhost/restaurants/public/images/1606060113873image_2020-11-22_174833.png,2.99,0.00,4,14
+134,"CAFFÈ MOCHA",,"2020-11-22 14:49:16","2020-11-22 14:49:16",http://localhost/restaurants/public/images/1606060142358image_2020-11-22_174902.png,2.99,0.00,4,14
+135,"LONG BLACK",,"2020-11-22 14:49:39","2020-11-23 19:38:38",http://localhost/restaurants/public/images/1606060165251image_2020-11-22_174925.png,2.99,0.00,4,14
+136,"ICED LATTE",,"2020-11-22 14:50:03","2020-11-22 14:50:03",http://localhost/restaurants/public/images/1606060189881image_2020-11-22_174949.png,2.99,0.00,4,14
+137,CORTADO,,"2020-11-22 14:50:24","2020-11-22 14:50:24",http://localhost/restaurants/public/images/1606060214998image_2020-11-22_175014.png,2.99,0.00,4,14
+138,"NIMBU JHINGA","Prawns, Nimbu Chutney","2020-11-22 15:10:43","2020-11-23 20:36:56",http://localhost/restaurants/public/images/1606061422960image_2020-11-22_181022.png,7.99,0.00,4,3
+139,"MOGAWALA PANEER","Spiced Soft Cheese, Beet Kachumbar","2020-11-22 15:11:13","2020-11-22 15:11:13",http://localhost/restaurants/public/images/1606061453647image_2020-11-22_181053.png,9.88,0.00,4,3
+140,"MASALEWALI CHANP","Lamb Chops, Ember-roasted Onion","2020-11-22 15:11:49","2020-11-23 20:45:46",http://localhost/restaurants/public/images/1606061483016image_2020-11-22_181122.png,8.99,0.00,4,3
+141,"TANDOORI COBIA","Line-caught Cobia, Smoked Tomato & Samphire Chutney","2020-11-22 15:12:25","2020-11-22 15:12:25",http://localhost/restaurants/public/images/1606061519154image_2020-11-22_181158.png,8.99,0.00,4,3
+142,"MURGH TIKKA ANGAR","Spice-marinated Chicken, Walnut Raita","2020-11-22 15:12:56","2020-11-23 19:50:10",http://localhost/restaurants/public/images/1606061554847image_2020-11-22_181234.png,7.99,0.00,4,3
+143,"TANDOORI GOBHI","Cauliflower, Green Mango Raita, Gunpowder","2020-11-22 15:13:26","2020-11-22 15:13:26",http://localhost/restaurants/public/images/1606061586875image_2020-11-22_181306.png,8.99,0.00,4,3
+144,"KEEMA PAU","(2 PCS) Spiced Mutton, Milk Buns, Crisp Potatoes","2020-11-22 15:15:12","2020-11-22 15:15:12",http://localhost/restaurants/public/images/1606061667479image_2020-11-22_181427.png,4.99,0.00,2,2
+145,"SAMOSA CHAAT","Smashed Samosa, Crispy Noodles, Tamarind Glaze, Yoghurt","2020-11-22 15:15:38","2020-11-22 15:15:38",http://localhost/restaurants/public/images/1606061720718image_2020-11-22_181520.png,4.99,0.00,2,2
+146,"SEASONAL CHUTNEYS","Seasonal Selection","2020-11-22 15:16:06","2020-11-22 15:16:06",http://localhost/restaurants/public/images/1606061750424image_2020-11-22_181550.png,4.99,0.00,2,2
+147,RAITA,"Seasoned Yoghurt, Pomegranate Seeds","2020-11-22 15:16:51","2020-11-22 15:16:51",http://localhost/restaurants/public/images/1606061781133image_2020-11-22_181620.png,3.99,0.00,2,2
+153,"Su tortilla",,"2020-11-27 13:54:59","2020-11-27 13:54:59",http://localhost/restaurants/public/images/1606488778586tortilla.PNG,100.00,0.00,3,37
+157,samosa,,"2020-12-15 16:37:24","2021-01-26 01:01:28",http://localhost/restaurants/public/images/1608046641204samosa-recipe.jpg,15.00,0.00,20,2
+159,"Paneer Rice","this food is very testy","2020-12-15 18:23:27","2020-12-21 12:26:34",http://localhost/restaurants/public/images/9af49ca4-0eb6-42a4-88b4-9ae16ba89a7d-1220155806.jpg,50.00,0.00,16,1
+160,"Sushi 1kg",,"2021-01-02 07:57:01","2021-02-28 06:40:57",http://localhost/restaurants/public/images/1609570461601_2021-01-02_085421.png,25.99,12.99,4,1
+161,"Salad Mimoza",,"2021-01-02 08:00:29","2021-01-02 16:35:26",http://localhost/restaurants/public/images/1609570824193_2021-01-02_090024.png,7.99,3.99,4,2
+162,"Soup Legrand",,"2021-01-02 08:10:12","2021-01-02 16:35:00",http://localhost/restaurants/public/images/1609571396427_2021-01-02_090956.png,5.99,2.55,4,6
+163,"Selbstgemachte Pizza",,"2021-01-02 08:16:34","2021-01-02 16:34:37",http://localhost/restaurants/public/images/1609571774600_2021-01-02_091614.png,5.99,3.33,4,23
+164,"Viennese pie",,"2021-01-02 10:58:44","2021-01-02 16:34:10",http://localhost/restaurants/public/images/1609581502623_2021-01-02_115822.png,5.99,3.99,4,5
+165,"Eiffel  sandwich",,"2021-01-02 11:06:49","2021-01-02 16:33:46",http://localhost/restaurants/public/images/1609581984180_2021-01-02_120623.png,5.99,3.99,4,5
+166,bbbbb,bahdbsb,"2021-02-01 15:30:33","2021-02-01 15:32:15",http://localhost/restaurants/public/images/image_picker518468833505444960.jpg,12.00,0.00,3,6
+167,"بيتزا فراخ",,"2021-02-10 15:25:57","2021-02-10 15:25:57",http://localhost/restaurants/public/images/image_picker518468833505444960.jpg,34.00,10.00,3,46
+168,Hyau,twea,"2021-02-11 17:20:45","2021-02-11 17:20:45",http://localhost/restaurants/public/images/image_picker518468833505444960.jpg,10.00,1.00,42,24
+169,Makloub,,"2021-02-11 17:59:51","2021-02-11 18:48:38",http://localhost/restaurants/public/images/1613054757793makloub.png,5.00,4.00,43,23
+170,"Pizza Napolitana",,"2021-02-22 23:28:00","2021-02-22 23:28:00",http://localhost/restaurants/public/images/1614029225093receitas-de-pizza-napolitana-1-730x449.jpg,19.00,0.00,46,23
+171,Apsjalebi,,"2021-02-24 12:37:49","2021-02-24 12:37:49",http://localhost/restaurants/public/images/72b29aa9-a975-4ccf-88d4-0d8d745203368405871504147877831.jpg,200.00,0.00,48,23
+172,3,,"2021-02-28 06:42:56","2021-02-28 06:42:56",http://localhost/restaurants/public/images/1599677699955shop3.jpg,3.00,0.00,3,15
+173,2,,"2021-02-28 06:45:25","2021-02-28 08:48:26",http://localhost/restaurants/public/images/1614501903457downloads_delivery.jpg,2.00,0.00,3,23
