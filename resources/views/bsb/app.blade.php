@@ -34,6 +34,7 @@
 
     <!-- Custom Css -->
     <link href="css/style.css" rel="stylesheet">
+    
 
     <link href="css/markets.css" rel="stylesheet">
 
@@ -140,7 +141,7 @@ font-family: 'Poppins', sans-serif !important;
     width: 20px;
     border-radius:5px;
 }
-
+  
     .foodm{
         margin-bottom: 0px !important;
         border: none;
@@ -187,17 +188,8 @@ font-family: 'Poppins', sans-serif !important;
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->
-    <!-- Search Bar -->
-    <div class="search-bar">
-        <div class="search-icon">
-            <i class="material-icons">search</i>
-        </div>
-        <input type="text" placeholder="START TYPING...">
-        <div class="close-search">
-            <i class="material-icons">close</i>
-        </div>
-    </div>
-    <!-- #END# Search Bar -->
+    
+
     <!-- Top Bar -->
     <nav class="navbar">
         <div class="container-fluid">
@@ -209,7 +201,7 @@ font-family: 'Poppins', sans-serif !important;
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li class="dropdown">
+                    <li class="dropdown ">
                         <a href="{{route('orders')}}"  role="button">
                             <i class="material-icons" >folder_open</i>
                             <span id="countNewOrders" class="label-count">0</span>
@@ -217,7 +209,7 @@ font-family: 'Poppins', sans-serif !important;
                     </li>
 
             @if ($userinfo->getUserPermission("Chat::View") )
-                    <li class="dropdown">
+                    <li class="dropdown ">
                         <a href="{{route('chat')}}"  role="button">
                             <i class="material-icons">chat_bubble_outline</i>
                             <span id="countChatNewMessages" class="label-count">0</span>
@@ -225,28 +217,27 @@ font-family: 'Poppins', sans-serif !important;
                     </li>
             @endif
 
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" role="button">
-                            <span class="">{{ $userinfo->getUserRole() }}</span>
+            <li class="dropdown ">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:9px ;">{{ $userinfo->getUserRole() }}
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="margin-top:30px !important ; margin-right:-60px;">
+        <li><a href="users?user_id={{ Auth::user()->id }}"role="button"><i class="material-icons">person</i>Profile</a></li>
+          <li><a href="{{route('logout')}}"  role="button">
+                            <i class="material-icons">input</i>Log Out</a></li>
+                        
+         
+          <li><a href="#" role="button"> <i class="material-icons">help</i>Help</a></li>
+        </ul>
+      </li>
+    
 
                     
-                    </a>       
-
-
-
-                    
-                     
-                    </li>
-                    <li class="dropdown">
-                        <a href="{{route('logout')}}"  role="button">
-                            <i class="material-icons">input</i>
-                        </a>
-                    </li>
                 </ul>
             </div>
 
         </div>
     </nav>
+
     <!-- #Top Bar -->
     <section>
         <!-- Left Sidebar -->
@@ -258,19 +249,9 @@ font-family: 'Poppins', sans-serif !important;
                 </div>
                 <div class="user_info1">
                            <h6>{{Auth::user()->name}}</h6>
-                           <p><span class="online_animation"></span> Online</p>
+                          <div class="online-div"> <h2 class="online"> </h2><p class="fati">Online</p></div>
                         </div>
-                <div class="info-container">
                 
-                    <div class="btn-group user-helper-dropdown">
-                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
-                        <ul class="dropdown-menu pull-right">
-                            <li><a href="users?user_id={{ Auth::user()->id }}"><i class="material-icons">person</i>Profile</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="{{ route('logout') }}"><i class="material-icons">input</i>Sign Out</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
             <!-- #User Info -->
 

@@ -72,7 +72,7 @@ class Theme
     public static function getAlertColor(){
 //        Theme::init();
 //        if (Auth::user() == null)
-            return 'f64e60';
+            return 'ff5722';
 //        return DB::table('settings')->where("param", 'ap_alertColor')->where("vendor", Auth::user()->id)->get()->first()->value;
     }
 

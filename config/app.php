@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Multi-RestaurantsFoodDelivery'),
+    'name' => env('APP_NAME', 'Multi Restaurants Food Delivery'),
 
     /*
     |--------------------------------------------------------------------------

@@ -200,6 +200,8 @@
 
 .col-pink .navbar .nav > li > a {
   color: #fff; }
+  
+  
 
 .col-pink .navbar .bars {
   float: left;
@@ -744,6 +746,9 @@
 
 .col-white .navbar .bars:hover {
   background-color: rgba(0, 0, 0, 0.08); }
+
+
+  
 
 /* Material Icons ============================== */
 .material-icons.md-18 {
@@ -2054,7 +2059,7 @@
   color: #00BCD4 !important; }
 
 .col-teal {
-  color: #009688 !important; }
+  color: #673ab7 !important; }
 
 .col-green {
   color: #4CAF50 !important; }
@@ -2870,7 +2875,7 @@ section.content {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
-  border-radius: 2px; }
+  border-radius: 5px; }
   .card .card-inside-title {
     margin-top: 25px;
     margin-bottom: 15px;
@@ -7569,10 +7574,9 @@ border-radius: 10px;
   margin: -88px 0px 1px 120px;
   padding-top: 15px;
 }
-
-.online_animation {
-  width: 120px;
-  height: 120px;
+ .online{
+  width: 11px;
+  height: 11px;
   background: #007d72;
   border-radius: 100%;
   margin-top: 15px;
@@ -7580,7 +7584,7 @@ border-radius: 10px;
   top: 1px;
   -webkit-animation: online 2s infinite;
   /* Safari 4.0 - 8.0 */
-  animation: online 2s infinite
+  animation: online 2s infinite;
 }
 
 
@@ -7588,27 +7592,30 @@ border-radius: 10px;
 
 @-webkit-keyframes online {
   from {
-      opacity: 0;
+      opacity: 0 ;
   }
   to {
-      opacity: 1;
+      opacity: 1 ;
   }
 }
 
 @keyframes online {
   from {
-      opacity: 0;
+      opacity: 0 ;
   }
   to {
       opacity: 1;
   }
 }
 
-.user_info1 p {
-  font-size: 17px;
-  font-weight: 600;
+.online-div{margin-top: -10px;}
+.user_info1 p{
+  font-size: 14px;
+  font-weight: 500;
   color: #1ed085;
-  margin: 0;
+  margin-top: -23px;
+  margin-left: 15px;
+  
 }
 
 .user_info1 h6 {
@@ -7801,7 +7808,16 @@ border-radius: 10px;
   color: #2196F3; }
 
 /* Login Page ================================== */
+.login-page.ls-closed{
+ 
+  background-color: #15283c;
+  color: #fff;
+  
+background-image:url('../images/pattern_h.png'); 
+}
 .login-page {
+  margin-left: auto;
+  margin-right: auto;
   background-color: #00BCD4;
   padding-left: 0;
   max-width: 360px;
@@ -7814,9 +7830,8 @@ border-radius: 10px;
   .login-page .login-box a {
     font-size: 14px;
     text-decoration: none;
-    color: #00BCD4; }
+    color: #007bff; }
   .login-page .login-box .logo {
-    background-color: #000;
     margin-bottom: 20px; }
     .login-page .login-box .logo a {
       font-size: 36px;
@@ -8274,3 +8289,4 @@ button.main_bt {
 .element.style{
   color: #1ed085;
 }
+
