@@ -24,6 +24,7 @@ class OrdersController extends Controller
     }
 
     function view(){
+        $iorders= DB::table('orders')->get();
         $iusers = DB::table('users')->get();
         $orderstatus = DB::table('orderstatuses')->get();
         $restaurants = DB::table('restaurants')->get();
@@ -45,7 +46,7 @@ class OrdersController extends Controller
 
         return view('orders', ['iusers' => $iusers, 'iorderstatus' => $orderstatus,
             'irestaurants' => $restaurants, 'idrivers' => $drivers, 'currency' => $currency, 'coupons' => $coupons,
-            'texton' => "", 'text' => '', 'rightSymbol' => $rightSymbol, 'symbolDigits' => $symbolDigits]);
+            'texton' => "", 'text' => '','iorders'=>$iorders, 'rightSymbol' => $rightSymbol, 'symbolDigits' => $symbolDigits]);
     }
 
     public function delete(Request $request){

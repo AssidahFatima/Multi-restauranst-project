@@ -34,7 +34,7 @@
 
     <!-- Custom Css -->
     <link href="css/style.css" rel="stylesheet">
-    
+
 
     <link href="css/markets.css" rel="stylesheet">
 
@@ -85,6 +85,60 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 
     <script src="js/companion.js"></script>
+
+
+
+ <!-- script click notification -->
+    <script>
+        $(document).ready(function(){
+            var down = false;
+
+            $('#bell').click(function(e){
+
+                var color = $(this).text();
+                if(down){
+
+                    $('#box').css('height','0px');
+                    $('#box').css('opacity','0');
+                    down = false;
+                }else{
+
+                    $('#box').css('height','auto');
+                    $('#box').css('opacity','1');
+                    down = true;
+
+                }
+
+            });
+
+                });
+    </script>
+
+
+<script>
+    $(document).ready(function(){
+        var drop = false;
+
+        $('#admin').click(function(e){
+
+            var color = $(this).text();
+            if(drop){
+
+                $('#dropdown-admin').css('height','0px');
+                $('#dropdown-admin').css('opacity','0');
+                drop = false;
+            }else{
+
+                $('#dropdown-admin').css('height','auto');
+                $('#dropdown-admin').css('opacity','1');
+                drop = true;
+
+            }
+
+        });
+
+            });
+</script>
 
     @include('bsb.style', array())
 
@@ -141,7 +195,7 @@ font-family: 'Poppins', sans-serif !important;
     width: 20px;
     border-radius:5px;
 }
-  
+
     .foodm{
         margin-bottom: 0px !important;
         border: none;
@@ -188,7 +242,7 @@ font-family: 'Poppins', sans-serif !important;
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->
-    
+
 
     <!-- Top Bar -->
     <nav class="navbar">
@@ -196,7 +250,7 @@ font-family: 'Poppins', sans-serif !important;
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="home">{{config('app.name')}}</a>
+                <div> <img src="img/logo.png" height="50px"><a class="navbar-brand" href="home">Multi Restaurants Food Delivery</a></div>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -208,6 +262,9 @@ font-family: 'Poppins', sans-serif !important;
                         </a>
                     </li>
 
+
+
+
             @if ($userinfo->getUserPermission("Chat::View") )
                     <li class="dropdown ">
                         <a href="{{route('chat')}}"  role="button">
@@ -216,22 +273,50 @@ font-family: 'Poppins', sans-serif !important;
                         </a>
                     </li>
             @endif
+            <li class="dropdown ">
+                <a  role="button">
+
+            <div class="icon3" id="bell"> <i class="material-icons">notifications</i> </div>
+            <span id="countNewOrders" class="label-count">0</span></a>
+                <div class="notifications" id="box">
+                    <div class="d-flex">
+                        <h6 class="flex">Notifications</h6>
+                        <a href="#" class="read-all" target="_blank"><span>Set read all</span></a>
+
+                          <p>Number of unread notifications: <span>2</span></p>
+                    </div>
+                    <div class="notifications-item"><img src="https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-File.png" alt="img">
+                        <div class="text">
+                            <h4>Samso aliao</h4>
+                            <p>Samso Nagaro Like your home work</p>
+                        </div>
+                    </div>
+                    <div class="notifications-item"> <img src="https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-File.png" alt="img">
+                        <div class="text">
+                            <h4>John Silvester</h4>
+                            <p>+20 vista badge earned</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
 
             <li class="dropdown ">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:9px ;">{{ $userinfo->getUserRole() }}
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu" style="margin-top:30px !important ; margin-right:-60px;">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:9px ;"><div class="drop-toggle" id="admin">{{ $userinfo->getUserRole() }}<span class="caret"></span></div>
+        </a>
+        <ul class="dropdown-menu dropadmin"id="dropdown-admin" style="margin-top:30px !important ; margin-right:-50px;">
         <li><a href="users?user_id={{ Auth::user()->id }}"role="button"><i class="material-icons">person</i>Profile</a></li>
-          <li><a href="{{route('logout')}}"  role="button">
+
+        <li><a href="{{route('home')}}" role="button"> <i class="material-icons">help</i>Help</a></li>
+        <li><a href="{{route('logout')}}"  role="button">
                             <i class="material-icons">input</i>Log Out</a></li>
-                        
-         
-          <li><a href="#" role="button"> <i class="material-icons">help</i>Help</a></li>
+
+
         </ul>
       </li>
-    
 
-                    
+
+
                 </ul>
             </div>
 
@@ -251,7 +336,7 @@ font-family: 'Poppins', sans-serif !important;
                            <h6>{{Auth::user()->name}}</h6>
                           <div class="online-div"> <h2 class="online"> </h2><p class="fati">Online</p></div>
                         </div>
-                
+
             </div>
             <!-- #User Info -->
 

@@ -25,7 +25,7 @@
         </tr>
         </thead>
         <tfoot>
-        <tr>
+        <tr >
             <th>{{$lang->get(43)}}</th> {{--Order ID--}}
             <th>{{$lang->get(44)}}</th> {{--Total--}}
             <th>{{$lang->get(45)}}</th> {{--Client--}}
@@ -38,7 +38,97 @@
         </tr>
         </tfoot>
         <tbody id="table_body">
-            {{--users--}}
+
+            @foreach($iorders as $key => $data)
+            @if ($data->send == 1)
+                <tr id="tr{{$data->id}}">
+                    <td>{{$data->id}}</td>
+                    <td id="total{{$data->id}}">
+                        @if ($rightSymbol == "false")
+                            {{$currency}}{{sprintf('%0.' . $symbolDigits . 'f', $data->total)}}
+                        @else
+                            {{sprintf('%0.' . $symbolDigits . 'f', $data->total)}}{{$currency}}
+                        @endif
+                    </td>
+                    <td>
+                        @foreach($iusers as $key => $idata)
+                            @if ($idata->id == $data->user)
+                                {{$idata->name}}
+                            @endif
+                        @endforeach
+                    </td>
+
+                    <td>
+                        @if ($userinfo->getUserPermission("Orders::Edit"))
+                            <select name="role" id="role{{$data->id}}" class="form-control show-tick" onchange="checkStatus(event, {{$data->id}})" >
+                                @if ($data->curbsidePickup == "true")
+                                    @foreach($iorderstatus as $key => $idata)
+                                        @if ($idata->id != 4)
+                                            @if ($idata->id == $data->status)
+                                                <option id="role{{$data->id}}_{{$idata->id}}" value="{{$idata->id}}" selected style="font-size: 16px  !important;">{{$idata->status}}</option>
+                                            @else
+                                                <option id="role{{$data->id}}_{{$idata->id}}" value="{{$idata->id}}" style="font-size: 16px  !important;">{{$idata->status}}</option>
+                                            @endif
+                                        @endif
+                                    @endforeach
+                                @else
+                                    @foreach($iorderstatus as $key => $idata)
+                                        @if ($idata->id == $data->status)
+                                            <option id="role{{$data->id}}_{{$idata->id}}" value="{{$idata->id}}" selected style="font-size: 16px  !important;">{{$idata->status}}</option>
+                                        @else
+                                            <option id="role{{$data->id}}_{{$idata->id}}" value="{{$idata->id}}" style="font-size: 16px  !important;">{{$idata->status}}</option>
+                                        @endif
+                                    @endforeach
+                                @endif
+                            </select>
+                        @else
+                            @foreach($iorderstatus as $key => $idata)
+                                @if ($idata->id == $data->status)
+                                    {{$idata->status}}
+                                @endif
+                            @endforeach
+                        @endif
+                    </td>
+
+                    <td>
+                        @foreach($irestaurants as $key => $idata)
+                            @if ($idata->id == $data->restaurant)
+                                {{$idata->name}}
+                            @endif
+                        @endforeach
+                    </td>
+                    <td>
+                        @if ($data->curbsidePickup == "true")
+                            <span class="badge bg-red">{{$lang->get(213)}}</span>
+                            @if ($data->arrived == "true")
+                                <span class="badge bg-red">{{$lang->get(214)}}</span><br>
+                            @else
+                                <br>
+                            @endif
+                        @endif
+                        <span class="badge bg-teal">{{$data->method}}</span>
+                    </td>
+                    <td>{{$data->updated_at}}</td>
+
+                    <td>
+                        @if ($userinfo->getUserPermission("Orders::Edit"))
+                            <button type="button" class="btn btn-default waves-effect" onclick="viewItem('{{$data->id}}',
+                                '{{$data->created_at}}', '{{$data->updated_at}}')">
+                                <img src="img/iconview.png" width="25px">
+                            </button>
+                        @endif
+                        @if ($userinfo->getUserPermission("Orders::Delete"))
+                            <button type="button" class="btn btn-default waves-effect" onclick="showDeleteMessage('{{$data->id}}')">
+                                <img src="img/icondelete.png" width="25px">
+                            </button>
+                        @endif
+
+                    </td>
+                </tr>
+            @endif
+
+        @endforeach
+
         </tbody>
     </table>
 

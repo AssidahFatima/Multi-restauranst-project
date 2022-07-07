@@ -39,6 +39,7 @@
 .navbar {
   font-family: "Roboto", sans-serif;
   -webkit-border-radius: 0;
+
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
@@ -200,8 +201,8 @@
 
 .col-pink .navbar .nav > li > a {
   color: #fff; }
-  
-  
+
+
 
 .col-pink .navbar .bars {
   float: left;
@@ -748,9 +749,12 @@
   background-color: rgba(0, 0, 0, 0.08); }
 
 
-  
+
 
 /* Material Icons ============================== */
+.material-icons:hover{
+   opacity:0.7 ; }
+
 .material-icons.md-18 {
   font-size: 18px; }
 
@@ -7559,6 +7563,7 @@ border-radius: 10px;
         margin-top: 15px;
         width: 70px;
         height: 70px;
+        margin-left: 16px;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
@@ -7569,7 +7574,7 @@ border-radius: 10px;
       display: block;
       position: relative;
       top: 15px; }
-      
+
 .user_info1 {
   margin: -88px 0px 1px 120px;
   padding-top: 15px;
@@ -7615,7 +7620,7 @@ border-radius: 10px;
   color: #1ed085;
   margin-top: -23px;
   margin-left: 15px;
-  
+
 }
 
 .user_info1 h6 {
@@ -7624,7 +7629,7 @@ border-radius: 10px;
   color: #fff;
   letter-spacing: 0;
 }
-     
+
       .sidebar .user-info .info-container .user-helper-dropdown {
         position: absolute;
         right: -3px;
@@ -7809,11 +7814,11 @@ border-radius: 10px;
 
 /* Login Page ================================== */
 .login-page.ls-closed{
- 
+
   background-color: #15283c;
   color: #fff;
-  
-background-image:url('../images/pattern_h.png'); 
+
+background-image:url('../images/pattern_h.png');
 }
 .login-page {
   margin-left: auto;
@@ -8266,13 +8271,13 @@ html.ie11 .bs-searchbox .form-control {
   width: 90%; }
 
   /*btn loggin*/
-  
+
 .main_bt {
- 
-  background: #1ed085;
+
+  background: #673ab7;
   text-align: center;
   color: #fff;
- 
+
 }
 
 button.main_bt {
@@ -8290,3 +8295,58 @@ button.main_bt {
   color: #1ed085;
 }
 
+
+/* navbar->li ->admin*/
+.drop-toggle:hover{
+    opacity: 0.7;
+}
+.dropadmin{
+   border-radius:  5px 5px 5px 5px !important;
+}
+
+/* css notification*/
+     .icon3 span{background: #f00;padding: 7px;border-radius: 50%;color: #fff;vertical-align: top;margin-left: 25px}
+    .icon3:hover{opacity: .7}
+    .notifications{width: 300px;height: 0px;opacity: 0;position: absolute;top: 60px;
+        right: -65px;border-radius: 10px 10px 10px 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+    .notifications h2{font-size: 14px;padding: 10px;border-bottom: 1px solid #eee;color: #999}
+    .notifications h2 span{color: #f00}
+    .notifications-item{display: flex;border-bottom: 1px solid #eee;padding: 6px 9px;margin-bottom: 0px;cursor: pointer}
+    .notifications-item:hover{background-color: #eee}
+    .notifications-item img{display: block;width: 50px;height: 50px;margin-right: 9px;border-radius: 50%;margin-top: 2px}
+    .notifications-item .text h4{color: #777;font-size: 16px;margin-top: 3px}
+    .notifications-item .text p{color: #aaa;font-size: 12px}
+
+    .d-flex{
+        height: 70px;
+        border-radius: 10px 10px 0px 0px;
+        background-color: #3699ff  ;
+
+    }
+    .d-flex .flex{
+        position: absolute;
+        color: #fff;
+        margin-left: 15px;
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 12px;
+    }
+    .d-flex p{
+        position: absolute;
+        color: #fff;
+        margin-left: 16px;
+        margin-top: 37px;
+        font-size: 12px;
+
+    }
+    .read-all span{
+        margin-left: 210px;
+        margin-top: 10px;
+        color: #000;
+        position: absolute;
+        background: #ffe821;
+        border-radius: 15px;
+        padding: 5px;
+    }

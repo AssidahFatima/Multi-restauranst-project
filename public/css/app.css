@@ -4533,6 +4533,7 @@ input[type=button].btn-block {
 }
 
 .navbar {
+    background-color: #5c4781!important;
   position: relative;
   display: flex;
   flex-wrap: wrap;
