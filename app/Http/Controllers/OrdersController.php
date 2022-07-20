@@ -383,8 +383,8 @@ class OrdersController extends Controller
         //return response()->json(['error' => "0", '$textt' => $textt, 'id' => UserInfo::getUserRoleId()]);
 
         $data = DB::select("SELECT orders.*, users.name, restaurants.name as restaurantName FROM orders " . $rightJoin . " LEFT JOIN users ON users.id=orders.user LEFT JOIN restaurants ON restaurants.id=orders.restaurant
-                        WHERE " . $searchRest . $searchVisible . $searchCat . " orders.send=1 AND (orders.id LIKE '%" . $search . "%' OR users.name LIKE '%" . $search . "%') ORDER BY " . $sortBy . " " . $sortAscDesc . " LIMIT " . $count . " OFFSET " . $offset);
-        $total = count(DB::select("SELECT orders.* FROM orders " . $rightJoin . " LEFT JOIN users ON users.id=orders.user WHERE " . $searchRest . $searchVisible . $searchCat . " orders.send=1 AND (orders.id LIKE '%" . $search . "%' OR users.name LIKE '%" . $search . "%')"));
+                        WHERE " . $searchRest . $searchVisible . $searchCat . " orders.send=0 AND (orders.id LIKE '%" . $search . "%' OR users.name LIKE '%" . $search . "%') ORDER BY " . $sortBy . " " . $sortAscDesc . " LIMIT " . $count . " OFFSET " . $offset);
+        $total = count(DB::select("SELECT orders.* FROM orders " . $rightJoin . " LEFT JOIN users ON users.id=orders.user WHERE " . $searchRest . $searchVisible . $searchCat . " orders.send=0 AND (orders.id LIKE '%" . $search . "%' OR users.name LIKE '%" . $search . "%')"));
 
         foreach ($data as &$value) {
             $value->timeago = Util::timeago($value->updated_at);

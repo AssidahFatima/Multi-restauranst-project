@@ -10,7 +10,7 @@
     <div class="body">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div id="orders" class="info-box bg-orange hover-zoom-effect">
+                <div id="orders" class="info-box hover-zoom-effect"style="background-color: #4badfb;color:#fff">
                     <div class="icon">
                         <i class="material-icons">payment</i>
                     </div>
@@ -22,7 +22,7 @@
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div id="orders4" class="info-box bg-yellow hover-zoom-effect">
+                <div id="orders4" class="info-box hover-zoom-effect" style="background-color: #956edb;color:#fff">
                     <div class="icon">
                         <i class="material-icons">assessment</i>
                     </div>
@@ -34,7 +34,7 @@
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div id="users" class="info-box bg-orange hover-zoom-effect">
+            <div id="users" class="info-box  hover-zoom-effect"style="background-color: #4badfb;color:#fff">
                 <div class="icon">
                     <i class="material-icons">person_outline</i>
                 </div>
@@ -46,7 +46,7 @@
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div id="restaurants" class="info-box bg-yellow hover-zoom-effect">
+                <div id="restaurants" class="info-box  hover-zoom-effect" style="background-color: #956edb;color:#fff">
                     <div class="icon">
                         <i class="material-icons">restaurant</i>
                     </div>
@@ -174,7 +174,7 @@
                             label: "{{$lang->get(62)}}",
                             data: [{{$e1}}, {{$e2}}, {{$e3}}, {{$e4}}, {{$e5}}, {{$e6}}, {{$e7}}, {{$e8}}, {{$e9}}, {{$e10}}, {{$e11}}, {{$e12}}],
                             borderColor: '#673ab7',
-                            backgroundColor: '#673ab7',
+                            backgroundColor: '#30136499',
                             pointBorderColor: '#673ab7',
                             pointBackgroundColor: '#673ab7',
                             pointBorderWidth: 1

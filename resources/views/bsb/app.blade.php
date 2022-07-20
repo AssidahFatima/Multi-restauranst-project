@@ -92,25 +92,18 @@
     <script>
         $(document).ready(function(){
             var down = false;
-
             $('#bell').click(function(e){
-
                 var color = $(this).text();
                 if(down){
-
                     $('#box').css('height','0px');
                     $('#box').css('opacity','0');
                     down = false;
                 }else{
-
                     $('#box').css('height','auto');
                     $('#box').css('opacity','1');
                     down = true;
-
                 }
-
             });
-
                 });
     </script>
 
@@ -118,25 +111,18 @@
 <script>
     $(document).ready(function(){
         var drop = false;
-
         $('#admin').click(function(e){
-
             var color = $(this).text();
             if(drop){
-
                 $('#dropdown-admin').css('height','0px');
                 $('#dropdown-admin').css('opacity','0');
                 drop = false;
             }else{
-
                 $('#dropdown-admin').css('height','auto');
                 $('#dropdown-admin').css('opacity','1');
                 drop = true;
-
             }
-
         });
-
             });
 </script>
 
@@ -150,25 +136,19 @@
 {{--        height:400px !important;--}}
         left: 30% !important;
 {{--        top: 50% !important;--}}
-
         }
-
 body{
 font-family: 'Poppins', sans-serif !important;
 }
-
-
 .checkbox{
     border-radius: 10px !important;
 }
-
 .dropzone {
     border-radius: 10px !important;
 }
 .card{
     border-radius: 10px;
 }
-
 .info{
     border-left: 2px solid red;
     padding-left: 10px;
@@ -177,7 +157,6 @@ font-family: 'Poppins', sans-serif !important;
 	font-size: 16px  !important;
 	top: 10px;
 }
-
 .checkmark {
     position: absolute;
     top: 5px;
@@ -186,7 +165,6 @@ font-family: 'Poppins', sans-serif !important;
     width: 20px;
     border-radius:5px;
 }
-
 .checkmark2 {
     margin: 10px 0px 10px 30px !important;
     top: 5px;
@@ -195,12 +173,10 @@ font-family: 'Poppins', sans-serif !important;
     width: 20px;
     border-radius:5px;
 }
-
     .foodm{
         margin-bottom: 0px !important;
         border: none;
     }
-
     .foodlabel{
       font-weight: normal;
       color: #aaa;
@@ -212,10 +188,7 @@ font-family: 'Poppins', sans-serif !important;
       -o-transition: 0.2s;
       -webkit-transition: 0.2s;
       transition: 0.2s;
-
     }
-
-
     </style>
 
 
@@ -385,14 +358,12 @@ font-family: 'Poppins', sans-serif !important;
     <script src="plugins/bootstrap-notify/bootstrap-notify.js"></script>
 
 <script>
-
     function showNotification(colorName, text, placementFrom, placementAlign, animateEnter, animateExit) {
         if (colorName === null || colorName === '') { colorName = 'bg-black'; }
         if (text === null || text === '') { text = 'alert'; }
         if (animateEnter === null || animateEnter === '') { animateEnter = 'animated fadeInDown'; }
         if (animateExit === null || animateExit === '') { animateExit = 'animated fadeOutUp'; }
         var allowDismiss = true;
-
         $.notify({
                 message: text
             },
@@ -421,7 +392,6 @@ font-family: 'Poppins', sans-serif !important;
                     '</div>'
             });
     }
-
     function inputHandler(e, parent, min, max) {
         var value = parseInt(e.target.value);
         if (value.isEmpty)
@@ -434,10 +404,7 @@ font-family: 'Poppins', sans-serif !important;
             value = min;
         parent.value = value;
     }
-
     var lastOrders = 0;
-
-
     function getChatNewMessages() {
         $.ajax({
             headers: {
@@ -465,10 +432,8 @@ font-family: 'Poppins', sans-serif !important;
             }}
         );
     }
-
     setInterval(getChatNewMessages, 10000); // one time in 10 sec
     getChatNewMessages();
-
     function moveToPageWithSelectedItem(id) {
         var itemsTable = $('#data_table').DataTable();
         var indexes = itemsTable
@@ -488,7 +453,6 @@ font-family: 'Poppins', sans-serif !important;
         }
         return 0;
     }
-
 </script>
 
 

@@ -143,6 +143,14 @@
                 <td>${visible}</td>
                 <td><div class="font-bold col-teal">${item.timeago}</div>${item.updated_at}</td>
                 <td>
+
+
+
+
+
+
+
+
             @if ($userinfo->getUserPermission("Food::Food::Edit"))
                 <button type="button" class="btn btn-default waves-effect" onclick="editItem('${item.id}')">
                     <img src="img/iconedit.png" width="25px">

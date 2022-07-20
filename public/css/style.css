@@ -8322,7 +8322,7 @@ button.main_bt {
     .d-flex{
         height: 70px;
         border-radius: 10px 10px 0px 0px;
-        background-color: #3699ff  ;
+        background-color: #03a9f4  ;
 
     }
     .d-flex .flex{
@@ -8343,10 +8343,16 @@ button.main_bt {
     }
     .read-all span{
         margin-left: 210px;
-        margin-top: 10px;
-        color: #000;
+        margin-top: 15px;
+        color: #fff;
         position: absolute;
-        background: #ffe821;
+        background: #cc2ae7e0;
         border-radius: 15px;
         padding: 5px;
+    }
+    .text p{
+        margin-top: -8px;
+    }
+    .text h6{
+        margin-top: -5px !important;
     }

@@ -56,6 +56,9 @@ class CategoriesController extends Controller
         return CategoriesController::getOne($id);
     }
 
+
+
+
     public function categoryGetInfo(Request $request)
     {
         if (!Auth::check())
@@ -138,7 +141,7 @@ class CategoriesController extends Controller
         }
         if ($sortPublished == '0' && $sortUnPublished == '0')
             $searchVisible = "visible='3' AND ";
-        
+
         $searchCat = "";
         if ($cat != "0")
             $searchCat = " parent=" . $cat . " AND ";

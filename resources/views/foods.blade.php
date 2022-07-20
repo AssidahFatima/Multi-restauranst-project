@@ -174,7 +174,7 @@
         </div>
     </div>
 
-{{--    @include('elements.imageselect', array())--}}
+    @include('elements.imageselect', array())
 
     <script type="text/javascript">
 
