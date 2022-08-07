@@ -10,7 +10,6 @@ use Auth;
 use App\Util;
 use App\Lang;
 use App\Currency;
-
 class DriversController extends Controller
 {
     public function load(Request $request)
@@ -93,5 +92,42 @@ class DriversController extends Controller
 
         return response()->json(['data' => $data, 'error'=>"0", 'idata' => $data, 'page' => $page, 'pages' => $t]);
     }
+
+
+
+    public function driversdetails(Request $request)
+    {
+        if (!Auth::check())
+            return \Redirect::route('/');
+        Logging::log("Orders Screen");
+        return DriversController::view();
+    }
+
+    function view(){
+        $orders= DB::table('orders')->get();
+        $iusers = DB::table('users')->get();
+        $orderstatus = DB::table('orderstatuses')->get();
+        $restaurants = DB::table('restaurants')->get();
+        $drivers = DB::table('users')->where("role", '3')->get();
+        $ordersdetails = null;
+
+        $settings = DB::table('settings')->where('param', '=', "default_currencies")->get()->first();
+        $currency = "";
+        if ($settings != null)
+            $currency = $settings->value;
+        // currency
+        $rightSymbol = DB::table('settings')->where('param', '=', "rightSymbol")->get()->first()->value;
+        $temp = DB::table('settings')->where('param', '=', "default_currencyCode")->get()->first()->value;
+        $symbolDigits = DB::table('currencies')->where('code', '=', $temp)->get()->first()->digits;
+        //
+        DB::table('settings')->where('param', '=', "ordersNotifications")->update(['value' => "0", 'updated_at' => new \DateTime(),]);
+        //
+        $coupons = DB::table('coupons')->get();
+
+        return view('driversdetails', ['iusers' => $iusers, 'iorderstatus' => $orderstatus,
+            'irestaurants' => $restaurants, 'idrivers' => $drivers, 'currency' => $currency, 'coupons' => $coupons,
+            'texton' => "", 'text' => '','orders'=>$orders, 'rightSymbol' => $rightSymbol, 'symbolDigits' => $symbolDigits]);
+    }
+
 
 }

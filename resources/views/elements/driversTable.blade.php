@@ -33,8 +33,9 @@
             <th>{{$lang->get(47)}}</th> {{--Market--}}
             <th>{{$lang->get(48)}}</th> {{--Details--}}
             <th>{{$lang->get(49)}}</th> {{--Updated At--}}
+            <th>{{$lang->get(222)}}</th> {{--Status--}}
             <th>{{$lang->get(74)}}</th> {{--Action--}}
-            <th>{{$lang->get(648)}}</th> {{--Driver--}}
+
 
         </tr>
         </tfoot>
@@ -210,6 +211,19 @@
     }
 
     function buildOneItem(item){
+        //
+         var status="";
+         if (item.status==6 ){
+            var status = `<img src="img/iconnoo.jpg" height="23px">`;
+        } else if (item.status== 5){
+            var status = `<img src="img/iconok.png" height="25px">`;
+        }
+        else{
+            var status = `<img src="img/symbole.png" height="30px">`;
+        }
+
+
+        //
 
         var text = ``;
         if (item.curbsidePickup == "true") {
@@ -267,18 +281,17 @@
 
                 <td><div class="font-bold col-teal">${item.timeago}</div>${item.updated_at}</td>
                 <td>
+                    ${status}
+                    </td> {{--Status--}}
+                <td>
             @if ($userinfo->getUserPermission("Orders::Edit"))
-                <button type="button" class="btn btn-default waves-effect" onclick="viewItem('${item.id}')">
+                <button type="button"  class="btn btn-default waves-effect"  onclick="viewItem('${item.id}')">
                     <img src="img/iconview.png" width="25px">
                 </button>
             @endif
-            @if ($userinfo->getUserPermission("Orders::Delete"))
-                <button type="button" class="btn btn-default waves-effect" onclick="showDeleteMessage('${item.id}')">
-                    <img src="img/icondelete.png" width="25px">
-                </button>
-            @endif
+
         </td>
-        <th>${item.driver}</th>
+
     </tr>
     `;
     }
@@ -319,8 +332,9 @@
             <th>{{$lang->get(47)}} <img onclick="tableHeaderSort('orders.restaurant');" src="${utilGetImg('orders.restaurant')}" class="img-fluid" style="margin-left: 10px; width: 20px; float: right;"></th> {{--Market--}}
             <th>{{$lang->get(48)}} </th> {{--Details--}}
             <th>{{$lang->get(49)}} <img onclick="tableHeaderSort('orders.updated_at');" src="${utilGetImg('orders.updated_at')}" class="img-fluid" style="margin-left: 10px; width: 20px; float: right;"></th> {{--Updated At--}}
+            <th>{{$lang->get(222)}}</th> {{--Status--}}
             <th>{{$lang->get(74)}} </th> {{--Action--}}
-            <th>{{$lang->get(648)}} </th> {{--Driver--}}
+
 
         `;
         document.getElementById("table_header").innerHTML = html;

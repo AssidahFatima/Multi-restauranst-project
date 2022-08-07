@@ -109,7 +109,18 @@ Route::post('permissionSet','PermissionsController@permissionSet');
 // drivers
 Route::get('drivers','DriversController@load');
 Route::post('driversGoPage','DriversController@goPage');
+Route::get('driversDetails','DriversController@driversdetails');
 
+
+
+Route::post('/setStatus', 'DriversController@setStatus');
+Route::post('/getStatus', 'DriversController@getStatus');
+Route::get('/getDriverOrders', 'DriversController@getDriverOrders');
+Route::post('/reject', 'DriversController@reject');
+Route::post('/accept', 'DriversController@accept');
+Route::post('/complete', 'DriversController@complete');
+Route::get('/getStatistics', 'DriversController@getStatistics');
+Route::post('/settings', 'DriversController@settings');
 
 // orders
 Route::get('ordersstatuses','OrderStatusesController@load');

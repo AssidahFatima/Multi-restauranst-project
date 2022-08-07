@@ -596,8 +596,13 @@ return [
     '640' => 'City name',
     '641' => 'The City field is required.',
     '642' => 'Select cities for market',
-    '643' => ' rejected by driver',
+    '643' => ' Rejected By Driver',
     '644' => 'Order #',
-    '645' => ' accepted by driver',
+    '645' => ' Accepted By Driver',
+    '646' => 'Drivers',
+    '647' => 'Delivery Boy',
+    '648'=>' Managing Delivery boy'
+
+
 
 ];

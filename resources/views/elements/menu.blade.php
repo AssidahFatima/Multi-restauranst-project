@@ -308,18 +308,45 @@
 
     <!-- Drivers -->
 
+
     <li>
-    @if (\Request::is('drivers'))
-        <li class="active">
-            @endif
-            <a href="drivers">
-                <i class="material-icons" style="color: #e91e63;">directions_car</i>
-                <span>{{$lang->get(20)}}</span>
-            </a>
-            @if (\Request::is('drivers'))
-        </li>
+        @if (\Request::is('drivers') OR \Request::is('driversDetails'))
+            <li class="active">
+                @endif
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons" style="color: #e91e63;">directions_car</i>
+                    <span>{{$lang->get(20)}}</span>
+                </a>
+                <ul class="ml-menu">
+
+                    @if ($userinfo->getUserPermission("Orders::View"))
+                        <li>
+                        @if (\Request::is('drivers') OR \Request::is('ordersedit'))
+                            <li class="active">
+                                @endif
+                                <a href="drivers">{{$lang->get(646)}}</a>
+                                @if (\Request::is('orders') OR \Request::is('ordersedit'))
+                            </li>
+                            @endif
+                            </li>
+                        @endif
+
+                        <li>
+                        @if (\Request::is('driversDetails'))
+                            <li class="active">
+                                @endif
+                                <a href="driversDetails">{{$lang->get(647)}}</a>
+                                @if (\Request::is('driversdetails'))
+                            </li>
+                            @endif
+                            </li>
+
+                </ul>
+            </li>
+            @if (\Request::is('orders') OR \Request::is('driversDetails') OR \Request::is('ordersedit') OR \Request::is('toprestaurants'))
+            </li>
         @endif
-        </li>
+
 
         <!-- Coupons -->
 

@@ -36,12 +36,12 @@
 </head>
 <body class="login-page">
 <div class="login-box">
-    <div align="center">
+    <div align="center" >
         <div class="logo">
-            <img src="img/logo.png" height="100px" >
+            <img src="img/logo.png" height="80px" >
             <br>
             <br>
-            <p>{{ config('app.name') }}</p>
+            <h4>{{ config('app.name') }}</h4>
         </div>
     </div>
     <div class="card">

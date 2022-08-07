@@ -223,7 +223,7 @@ font-family: 'Poppins', sans-serif !important;
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <div> <img src="img/logo.png" height="50px"><a class="navbar-brand" href="home">Multi Restaurants Food Delivery</a></div>
+                <div> <img src="img/logo.png" height="50px" ><a class="navbar-brand" href="home">{{ config('app.name') }}</a></div>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -246,6 +246,8 @@ font-family: 'Poppins', sans-serif !important;
                         </a>
                     </li>
             @endif
+
+            @if ($userinfo->getUserPermission("Chat::View") )
             <li class="dropdown ">
                 <a  role="button">
 
@@ -272,6 +274,7 @@ font-family: 'Poppins', sans-serif !important;
                     </div>
                 </div>
             </li>
+            @endif
 
 
             <li class="dropdown ">
@@ -413,13 +416,14 @@ font-family: 'Poppins', sans-serif !important;
             type: 'POST',
             url: '{{ url("getChatMessagesNewCount") }}',
             data: {
+
             },
             success: function (data){
                 console.log(data);
                 if (document.getElementById("countChatNewMessages") != null)
                     document.getElementById("countChatNewMessages").innerHTML = data.count;
                 document.getElementById("countNewOrders").innerHTML = data.orders;
-                if (data.orders != lastOrders){
+                if (data.orders != lastOrders ){
                     lastOrders = data.orders;
                     const audio = new Audio("img/sound.mp3");
                     audio.play();

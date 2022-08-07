@@ -175,7 +175,7 @@
 `;
         }
 
-        // <td><div class="font-bold col-teal">${item.timeago}</div>${item.updated_at}</td>
+        //<td><div class="font-bold col-teal">${item.timeago}</div>${item.updated_at}</td>
 
         function initPaginationLine(pages, page){
             var html = "<ul class=\"pagination\">";

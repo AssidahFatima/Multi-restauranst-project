@@ -24,7 +24,7 @@ class OrdersController extends Controller
     }
 
     function view(){
-        $iorders= DB::table('orders')->get();
+        $orders= DB::table('orders')->get();
         $iusers = DB::table('users')->get();
         $orderstatus = DB::table('orderstatuses')->get();
         $restaurants = DB::table('restaurants')->get();
@@ -46,7 +46,7 @@ class OrdersController extends Controller
 
         return view('orders', ['iusers' => $iusers, 'iorderstatus' => $orderstatus,
             'irestaurants' => $restaurants, 'idrivers' => $drivers, 'currency' => $currency, 'coupons' => $coupons,
-            'texton' => "", 'text' => '','iorders'=>$iorders, 'rightSymbol' => $rightSymbol, 'symbolDigits' => $symbolDigits]);
+            'texton' => "", 'text' => '','orders'=>$orders, 'rightSymbol' => $rightSymbol, 'symbolDigits' => $symbolDigits]);
     }
 
     public function delete(Request $request){
@@ -84,7 +84,7 @@ class OrdersController extends Controller
         $ordersdetails = DB::table('ordersdetails')->where('order', '=', $orderid)->get();
         $subtotal = 0;
         foreach ($ordersdetails as &$value) {
-            $total = $value->foodprice * $value->count + $value->extrasprice * $value->extrascount;
+            $total = $value->foodprice* $value->count + $value->extrasprice * $value->extrascount;
             $subtotal = $subtotal + $total;
         }
         $fee = $order->fee*$subtotal/100;
@@ -383,8 +383,8 @@ class OrdersController extends Controller
         //return response()->json(['error' => "0", '$textt' => $textt, 'id' => UserInfo::getUserRoleId()]);
 
         $data = DB::select("SELECT orders.*, users.name, restaurants.name as restaurantName FROM orders " . $rightJoin . " LEFT JOIN users ON users.id=orders.user LEFT JOIN restaurants ON restaurants.id=orders.restaurant
-                        WHERE " . $searchRest . $searchVisible . $searchCat . " orders.send=0 AND (orders.id LIKE '%" . $search . "%' OR users.name LIKE '%" . $search . "%') ORDER BY " . $sortBy . " " . $sortAscDesc . " LIMIT " . $count . " OFFSET " . $offset);
-        $total = count(DB::select("SELECT orders.* FROM orders " . $rightJoin . " LEFT JOIN users ON users.id=orders.user WHERE " . $searchRest . $searchVisible . $searchCat . " orders.send=0 AND (orders.id LIKE '%" . $search . "%' OR users.name LIKE '%" . $search . "%')"));
+                        WHERE " . $searchRest . $searchVisible . $searchCat . " orders.send=1 AND (orders.id LIKE '%" . $search . "%' OR users.name LIKE '%" . $search . "%') ORDER BY " . $sortBy . " " . $sortAscDesc . " LIMIT " . $count . " OFFSET " . $offset);
+        $total = count(DB::select("SELECT orders.* FROM orders " . $rightJoin . " LEFT JOIN users ON users.id=orders.user WHERE " . $searchRest . $searchVisible . $searchCat . " orders.send=1 AND (orders.id LIKE '%" . $search . "%' OR users.name LIKE '%" . $search . "%')"));
 
         foreach ($data as &$value) {
             $value->timeago = Util::timeago($value->updated_at);

@@ -7815,7 +7815,7 @@ border-radius: 10px;
 /* Login Page ================================== */
 .login-page.ls-closed{
 
-  background-color: #15283c;
+  background-color: #09a6edd9;
   color: #fff;
 
 background-image:url('../images/pattern_h.png');
@@ -7837,7 +7837,9 @@ background-image:url('../images/pattern_h.png');
     text-decoration: none;
     color: #007bff; }
   .login-page .login-box .logo {
+    margin-top: -30px;
     margin-bottom: 20px; }
+
     .login-page .login-box .logo a {
       font-size: 36px;
       display: block;
@@ -8274,7 +8276,7 @@ html.ie11 .bs-searchbox .form-control {
 
 .main_bt {
 
-  background: #673ab7;
+  background: #438134;
   text-align: center;
   color: #fff;
 
@@ -8287,7 +8289,7 @@ button.main_bt {
 
 .main_bt:hover,
 .main_bt:focus {
-  background: #ff5722;
+  background: #c9c309;
   color: #fff;
 }
 
@@ -8356,3 +8358,53 @@ button.main_bt {
     .text h6{
         margin-top: -5px !important;
     }
+
+
+
+
+
+    .button1 {
+      background-color: #f3521f;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      margin-left: 105px;
+      border: 1px solid #f3521f;
+      border-radius: 5px;
+      width: 250px;
+    }
+
+    .button1:hover {
+      background-color: #b34320eb;
+      border: 1px solid #b34320eb;
+      color: white;
+    }
+    .button2 {
+      background-color: #12c160;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      margin-left: 105px;
+      border: 1px solid #12c160;
+      border-radius: 5px;
+      width: 250px;
+    }
+
+    .button2:hover {
+      background-color: #0fb311;
+      border: 1px solid #0fb311;
+      color: white;
+    }
+
+
+
